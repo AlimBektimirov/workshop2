@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template("all.html", director=director_dictionary, film=film_dictionary)
-
+    # return render_template("all.html", director=director_dictionary, film=film_dictionary)
+    return 'Hello  world!'
 @app.route('/server/api/<action>', methods = [ 'GET'])
 def apiget(action):
 
